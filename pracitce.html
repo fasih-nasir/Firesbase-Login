@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <button  onclick="fn('create')">create accont</button>
+    <button   onclick="fn('login')">login</button>
+    <div id="main">
+        <div>
+        <h1>login</h1>
+    </div>
+
+    <div>
+        <input type="text" name="" id="">
+<input type="">
+<input type="text">
+    </div>
+    </div>
+    <script>
+        var main=document.getElementById("main")
+        
+        function fn(e){
+            console.log(e);
+            
+        
+        if(e == "create"){
+main.innerHTML=`
+  <div>
+        <h1>Create</h1>
+    </div>
+
+    <div>
+        <input type="text" name="" id="">
+<input type="">
+<input type="text">
+    </div>
+`
+        }
+    else{
+        main.innerHTML=`
+         <div>
+        <h1>login</h1>
+    </div>
+
+    <div>
+        <input type="text" name="" id="">
+<input type="">
+<input type="text">
+    </div>
+        `
+    }
+    }
+
+// var pr=new Promise((res,rej)=>{
+//     res(2);
+//     // rej(1)
+// })
+// .then((e)=>{
+//     console.log(e*e);
+    
+// })
+// var name="fasihnasir";
+
+// var pr=new Promise((res,rej)=>{
+//     if(name == "fasihnasir"){
+//         res("YES")
+//     }
+//     else{
+//         rej("no")
+//     }
+// })
+// .then((tr)=>{
+//     console.log(tr);
+    
+// })
+// .catch((vr)=>{
+//     console.log(vr);
+    
+// })
+//         var arr=[ 
+//             {name:"fasi",fname:"nasir"},
+//             {name:"fasih",fname:"nasir"},
+//             {name:"fass",fname:"nasir"},
+            
+//              {name:"fasih",fname:"nasir"},
+
+//     ]
+//     var newarr=[]
+//     // console.log(newarr.indexOf("fasih"));
+//    var pr=new Promise((res,rej)=>{
+
+//        for(let i=0;i<arr.length;i++){
+//            if(newarr.indexOf("fasih") === 0){
+//             newarr.push(arr[i])
+//         res( newarr)
+        
+//            }
+//            else{
+//             rej("nothing find")
+//            }
+//        }
+
+//    }) 
+//    .then((result)=>{
+//     console.log(result);
+    
+//    })
+//    .catch((ero)=>{
+//     console.log(ero);
+    
+//    })
+    
+
+    </script>
+</body>
+</html>
