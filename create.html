@@ -1,4 +1,5 @@
 
+
 <html lang="en">
   <head>
     <meta charset="utf-8">
@@ -117,7 +118,7 @@ outline: none;
       document.addEventListener('DOMContentLoaded', () => {
         document.getElementById("login").addEventListener("click", () => {
           // alert("Account Create")
-          location.href = "login.html";
+          location.href = "index.html";
         });
   
         document.getElementById("btncreateaccc").addEventListener("click", () => {
@@ -130,16 +131,16 @@ outline: none;
               const user = userCredential.user;
               console.log(user);
               alert("Account Create")
-              location.href = "login.html";
+              location.href = "index.html";
               return updateProfile(user, { displayName: name });
             })
             .catch((error) => {
               const errorMessage = error.message;
               if (errorMessage) {
                 
-                // alert("Login failed: " + errorMessage);
+                alert("Login failed: " + errorMessage);
                 // document.getElementById("info").innerText = `EMAIL IS ALREADY EXIST`;
-                // location.href = "login.html";
+                // location.href = "index.html";
               }
             });
         });
@@ -147,6 +148,14 @@ outline: none;
     </script>
   
         
+        
+        
+        
+    <!-- <script src="app.js" type="module"></script> -->
+<!-- <script src="module.mjs" type="module"></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  </body>
+</html>
         
         
         
