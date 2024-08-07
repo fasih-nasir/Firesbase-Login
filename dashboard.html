@@ -48,7 +48,7 @@
 
       if (!user) {
         // Redirect to login page if the user is not signed in
-        location.href = "login.html";
+        location.href = "index.html";
       } else {
         // User is signed in
         console.log("User UID:", user.uid);
@@ -59,7 +59,7 @@
     document.getElementById("logout").addEventListener("click", () => {
       signOut(auth).then(() => {
         console.log("User signed out");
-        location.href = "login.html"; // Redirect to login page
+        location.href = "index.html"; // Redirect to login page
       }).catch((error) => {
         console.error("Sign out error:", error);
       });
