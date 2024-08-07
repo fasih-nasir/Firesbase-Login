@@ -129,7 +129,7 @@ outline: none;
           createUserWithEmailAndPassword(authInstance, email, password)
             .then((userCredential) => {
               const user = userCredential.user;
-              console.log(user);
+              // console.log(user);
               alert("Account Create")
               location.href = "index.html";
               return updateProfile(user, { displayName: name });
